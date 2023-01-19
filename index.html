@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="state-container" id="state-container">
+      <article class="article" id="article-rating-state">
+        <div class="star_center">
+          <img src="./images/icon-star.svg" alt="Icon star" />
+        </div>
+
+        <h1 class="article__title">How did we do?</h1>
+        <p class="article__text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form class="form" id="form">
+          <ul class="form__list" id="rating-list">
+            <li class="form__rating">1</li>
+            <li class="form__rating">2</li>
+            <li class="form__rating">3</li>
+            <li class="form__rating">4</li>
+            <li class="form__rating">5</li>
+          </ul>
+          <input
+            type="submit"
+            value="SUBMIT"
+            class="form__submit"
+            id="submit-button"
+          />
+        </form>
+      </article>
+      <article
+        class="article article--thank-you-state article--disabled"
+        id="thank-you-state"
+      >
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Illustration"
+          class="article__illustration"
+        />
+        <span class="article__rating" id="rating-span"></span>
+        <h1 class="article__title">Thank you!</h1>
+        <p class="article__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </article>
+    </div>
+  </body>
+</html>
